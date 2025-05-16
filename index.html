@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+</head>
+
+<body>
+	<div class="container">
+	
+		<!--header-->
+		<div class="header" >
+			<h1>Bible Quiz App</h1>
+		</div>
+		
+		<!--Progress bar-->
+		<div class="progress-container">
+			<div class="progress-bar">
+			<div class="progress"></div>
+			</div>
+			<div class="progress-text">
+			  <span id="question-number">Question 1 of 5</span>
+			  <span id="percent"> 0% Complete</span>
+			</div>
+		</div>
+		
+		<!--Quiz content-->
+		<div class="quiz-container">
+			<div class="question"> Question will appear here</div>
+			<div class="options"></div>
+			<div class="navigation">
+				<button class="btn">Previous</button>
+				<button class="restart-btn">Restart</button>
+				
+				
+			</div>
+		</div>
+		
+		<!--Score section-->
+		<div class="score-container">
+			<div class="result">Score: <span id="score">0</span></div>
+			<div class="timer">Time Left: <span id="time">30</span>s</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

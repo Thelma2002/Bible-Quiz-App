@@ -127,7 +127,7 @@ function endQuiz() {
     optionsEl.style.display = "none";
     resultEl.style.display = "block";
     scoreEl.textContent = score;
-    restartBtn.style.display = "block";
+    restartBtn.style.display = "flex";
 	restartBtn.style.visibility = "visible"; // Ensure it's visible on end
 }
 
@@ -143,7 +143,7 @@ restartBtn.addEventListener("click", () => {
 	//reset the display
 	timerEl.textContent = timeLeft;
     questionEl.style.display = "block";
-    optionsEl.style.display = "block"; //ensures questions display correctly
+    optionsEl.style.display = "flex"; //ensures questions display correctly
     resultEl.style.display = "none";
     restartBtn.style.display = "none";
 	
